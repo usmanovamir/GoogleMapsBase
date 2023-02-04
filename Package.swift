@@ -12,6 +12,12 @@ let package = Package(
         .library(name: "GoogleMapsBase", targets: ["GoogleMapsBase"])
     ],
     targets:[
-        .binaryTarget(name: "GoogleMapsBase", path: "Frameworks/GoogleMapsBase.xcframework")
+        .binaryTarget(name: "GoogleMapsBase", path: "Frameworks/GoogleMapsBase.xcframework"),
+        .systemLibrary(name: "CoreData"),
+        .systemLibrary(name: "CoreGraphics"),
+        .systemLibrary(name: "CoreLocation"),
+        .systemLibrary(name: "QuartzCore"),
+        .systemLibrary(name: "SystemConfiguration"),
+        .systemLibrary(name: "UIKit")
     ]
 )
